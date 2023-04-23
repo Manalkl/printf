@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * _printf - print all.
@@ -48,4 +49,60 @@ int _printf(const char *format, ...)
 	}
 	print_buf(buffer, ibuf), free(buffer), va_end(arguments);
 	return (len);
+
+}
+/**
+ * print_chr - writes the char c in stdout
+ * @arguments: input char
+ * @buf: buffer pointer
+ * @ibuf: index for buffer pointer
+ * Return: On success return 1
+ */
+int print_chr(va_list arguments, char *buf, unsigned int ibuf)
+{
+	char c;
+
+	c = va_arg(arguments, int);
+	handl_buf(buf, c, ibuf);
+
+	return (1);
+}
+#include "main.h"
+
+/**
+ * print_str - writes  string
+ * @arguments: string
+ * @buf: buffer pointer
+ * @ibuf: index for buffer pointer
+ * Return: 1
+ */
+int print_str(va_list arguments, char *buf, unsigned int ibuf)
+{
+	char *str;
+	unsigned int i;
+	char nill[] = "(null)";
+
+	str = va_arg(arguments, char *);
+	if (str == NULL)
+	{
+		for (i = 0; nill[i]; i++)
+			ibuf = handl_buf(buf, nill[i], ibuf);
+		return (6);
+	}
+	for (i = 0; str[i]; i++)
+		ibuf = handl_buf(buf, str[i], ibuf);
+	return (i);
+}
+/**
+ * print_prg - writes the character c to stdout
+ * @a: input char
+ * @buf: buffer pointer
+ * @i: index for buffer pointer
+ * Return: always success 1
+ */
+int print_prg(va_list a __attribute__((unused)), char *buf, unsigned int i)
+{
+	handl_buf(buf, '%', i);
+
+	return (1);
 }
