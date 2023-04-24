@@ -129,7 +129,7 @@ int print_hex(va_list list)
 
 
 /**
- * check_heX - Prints a number on base16 Uppercase
+ * print_heX - Prints a number on base16 Uppercase
  * @list: List of the arguments passed to the func
  * Return: Number of char printed
  */
@@ -174,7 +174,7 @@ int print_heX(va_list list)
 }
 
 /**
- * hex_HEX - Checks which hex func is calling it
+ * print_hex_HEX - Checks which hex func is calling it
  * @num: Number to convert into letter
  * @x:  which hex function is calling it
  * Return: Ascii value for a letter

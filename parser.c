@@ -4,7 +4,8 @@
  * parser - Receives all the necessary parameters to print a formated string.
  * @format: All the desired characters.
  * @f_list: List of all the posible functions.
- * @arg_list: A list containing all the possible argumentents passed to the program.
+ * @arg_list: A list containing all the possible
+ * argumentents passed to the program.
  * Return: A total count of the chars printed.
  */
 int parser(const char *format, conver_t f_list[], va_list arg_list)
@@ -12,6 +13,7 @@ int parser(const char *format, conver_t f_list[], va_list arg_list)
 	int i, j, r_val, printed_chars;
 
 	printed_chars = 0;
+
 	for (i = 0; format[i] != '\0'; i++)
 	{
 		if (format[i] == '%')
@@ -45,6 +47,6 @@ int parser(const char *format, conver_t f_list[], va_list arg_list)
 			_write_char(format[i]);
 			printed_chars++;
 		}
-	}
+		}
 	return (printed_chars);
 }
