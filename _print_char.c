@@ -6,7 +6,7 @@
  * @c: The character to print
  *
  * Return: always success 1.
- * 
+ *
  * if  error, -1 is returned.
  *
  */
