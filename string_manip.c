@@ -1,7 +1,6 @@
 #include "main.h"
 
 /**
- *
  * print_reversed - Function to reverse and print a string
  *
  * @arg: Argument passed to the function
