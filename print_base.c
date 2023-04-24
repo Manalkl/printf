@@ -83,7 +83,7 @@ int print_octal(va_list list)
 }
 
 /**
- * check_hex - Prints number on base16 lowercase
+ * print_hex - Prints number on base16 lowercase
  * @list: List of the arguments passed to the function
  * Return: Number of char printed
  */
@@ -174,7 +174,7 @@ int print_heX(va_list list)
 }
 
 /**
- * print_hex_HEX - Checks which hex func is calling it
+ * hex_check - Checks which hex func is calling it
  * @num: Number to convert into letter
  * @x:  which hex function is calling it
  * Return: Ascii value for a letter

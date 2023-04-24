@@ -48,7 +48,7 @@ int print_percent(__attribute__((unused))va_list list)
 }
 
 /**
- * print_int - Prints an integer
+ * print_integer - Prints an int
  *
  * @list: list of arguments
  *
@@ -63,7 +63,7 @@ int print_integer(va_list list)
 }
 
 /**
- * unsign_int - Prints Unsigned integers
+ * unsigned_integer - Prints Unsigned int
  *
  * @list: List of all of the argumets
  *
