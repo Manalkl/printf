@@ -16,7 +16,7 @@ int print_char(va_list list)
 
 /**
  * print_string - Prints string
- * 
+ *
  * @list: list of arguments
  *
  * Return: the amount of string  printed.
@@ -36,7 +36,7 @@ int print_string(va_list list)
 
 /**
  * print_percent - percent symbol %
- * 
+ *
  * @list: list of arguments
  *
  * Return: the amount of percent  printed.
@@ -49,7 +49,7 @@ int print_percent(__attribute__((unused))va_list list)
 
 /**
  * print_int - Prints an integer
- * 
+ *
  * @list: list of arguments
  *
  * Return: the amount of int  printed.
@@ -64,7 +64,7 @@ int print_integer(va_list list)
 
 /**
  * unsign_int - Prints Unsigned integers
- * 
+ *
  * @list: List of all of the argumets
  *
  * Return: a count of the numbers

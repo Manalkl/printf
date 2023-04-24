@@ -5,7 +5,7 @@
  * print_reversed - Function to reverse and print a string
  *
  * @arg: Argument passed to the function
- * 
+ *
  * Return: The amount of chars printed
  */
 int print_reversed(va_list arg)

@@ -4,7 +4,7 @@
  * print_number - number send to this function
  *
  * @args: List of arguments
- * 
+ *
  * Return: The num of arguments printed
  */
 int print_number(va_list args)
@@ -42,7 +42,7 @@ int print_number(va_list args)
  * print_unsgined_number - Prints an unsigned int
  *
  * @n: unsigned int to be printed
- * 
+ *
  * Return: The amount of int printed
  */
 int print_unsgined_number(unsigned int n)
