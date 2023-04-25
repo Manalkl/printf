@@ -43,31 +43,3 @@ int main(void)
 	printf("Unknown:[%r]\n");
 	return (0);
 }
-
-/* main.c Task2 */
-
-/**
- * main - Entry point
- *
- * Return: Always 0
- */
-int main(void)
-{
-	_printf("%b\n", 98);
-	return (0);
-}
-
-/* main.c Task5 */
-
-/**
- * main - Entry point
- *
- * Return: Always 0
- *
- */
-int main(void)
-{
-	_printf("%S\n", "Best\nSchool");
-	return (0);
-}
-
