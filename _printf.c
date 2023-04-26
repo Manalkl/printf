@@ -38,25 +38,25 @@ int _printf(const char *format, ...)
 	return (printed_chars);
 }
 /**
- * print_S - prints a string with non-printable characters
+ * print_S - prins string
+ * 
  * @str: string to print
+ * 
  * Return: number of characters printed
  */
 int print_S(char *str)
 {
-    int i, count = 0;
-
-    for (i = 0; str[i] != '\0'; i++)
+	int i, count = 0;
+	for (i = 0; str[i] != '\0'; i++)
     {
-        if (str[i] < 32 || str[i] >= 127)
-        {
-            count += printf("\\x%02X", str[i]);
-        }
-        else
-        {
-            count += putchar(str[i]);
-        }
+	    if (str[i] < 32 || str[i] >= 127)
+	{
+		count += printf("\\x%02X", str[i]);
+	}
+	else
+	{
+		count += putchar(str[i]);
+	}
     }
-
-    return (count);
+	return (count);
 }
